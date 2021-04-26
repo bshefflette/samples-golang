@@ -265,7 +265,7 @@ func LoginCallbackHandler(w http.ResponseWriter, r *http.Request) {
 		log.Fatalf("SESSION SAVE ERROR: %+v\n", err.Error())
 	}
 
-	http.Redirect(w, r, "/", http.StatusFound)
+	http.Redirect(w, r, "/profile", http.StatusFound)
 
 }
 
